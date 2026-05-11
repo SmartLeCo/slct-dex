@@ -65,6 +65,22 @@ export default function Home() {
               toToken:
                 '0xd1f48650351a97adca2f9eb3b9a7807be083468d',
               variant: 'compact',
+
+              tokens: {
+                featured: [
+                  {
+                    address:
+                      '0xd1f48650351a97adca2f9eb3b9a7807be083468d',
+                    chainId: 137,
+                    symbol: 'SLCT',
+                    name: 'SmartLeCo',
+                    decimals: 18,
+                    logoURI:
+                      'https://smartleco.xyz/wp-content/uploads/2026/04/logo_SLC-100.png',
+                  },
+                ],
+              },
+
               theme: {
                 palette: {
                   primary: {

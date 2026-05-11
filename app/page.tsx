@@ -15,9 +15,9 @@ export default function Home() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        overflowX: 'hidden',
       }}
     >
+      {/* Glass container */}
       <div
         style={{
           width: '100%',
@@ -35,7 +35,8 @@ export default function Home() {
             appearance: 'dark',
             fromChain: 137,
             toChain: 137,
-            toToken: '0xd1f48650351a97adca2f9eb3b9a7807be083468d',
+            toToken:
+              '0xd1f48650351a97adca2f9eb3b9a7807be083468d',
             variant: 'compact',
             theme: {
               palette: {

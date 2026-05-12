@@ -83,8 +83,9 @@ export default function Home() {
 
           {/* LiFi Widget */}
           <LiFiWidget
-            integrator="SmartLeCo"
+            integrator="SmartLeCo-DEX"
             config={{
+              fee: 0.005,
               appearance: 'dark',
               fromChain: 137,
               toChain: 137,

@@ -113,8 +113,19 @@ export default function Home() {
               e.currentTarget.style.transform = 'translateY(0)'
             }}
           >
-            <span style={{ fontSize: '14px', lineHeight: 1 }}>👥</span>
-            <span>Earn with Referrals &gt;</span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', color: '#32D74B' }} aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M16 8h-5a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4H8" />
+                <path d="M12 18V6" />
+              </svg>
+            </span>
+            <span>Earn with Referrals</span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', color: '#FFFFFF' }} aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </span>
           </a>
           </div>
 

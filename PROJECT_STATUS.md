@@ -266,3 +266,45 @@ Important:
 - Recheck WalletConnect, MetaMask Mobile, Rabby, swaps and fees after upgrades.
 
 Current main branch contains the latest DEX implementation.
+
+## 14. Stellar / LOBSTR verification — 2026-10-26
+
+Status: WALLET CONNECTION VERIFIED ON PRODUCTION
+
+Stellar integration:
+- LI.FI Widget 4.10.3.
+- @lifi/widget-provider-stellar.
+- StellarProvider() is enabled.
+- Stellar Wallets Kit uses Stellar PUBLIC network.
+- LOBSTR is already included through LobstrModule().
+- Freighter and other Stellar wallets are also included.
+
+LOBSTR connection method:
+- Install the official LOBSTR Signer browser extension.
+- Link LOBSTR Signer to the existing mobile LOBSTR wallet.
+- Open https://dex.smartleco.xyz in Chrome.
+- Select Connect wallet -> LOBSTR.
+- The integration uses @lobstrco/signer-extension-api.
+- EVM WalletConnect is NOT required for this connection.
+
+Production verification:
+- LOBSTR extension detected: PASS.
+- LOBSTR displayed as Installed: PASS.
+- Stellar wallet connection: PASS.
+- Stellar wallet disconnection: PASS.
+
+NOT YET VERIFIED:
+- Real Stellar -> Polygon swap.
+- Stellar transaction signing through LI.FI.
+- Cross-chain execution and receiving tokens.
+- SmartLeCo integrator fee settlement on Stellar routes.
+
+These transaction tests are intentionally postponed
+until the user chooses to perform them.
+
+IMPORTANT:
+- No DEX code changes were needed for LOBSTR.
+- Do not modify the working StellarProvider configuration unnecessarily.
+- Do not mark Stellar swaps as verified until a real transaction succeeds.
+
+Current main branch at this checkpoint: 818728e.

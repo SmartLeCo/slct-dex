@@ -235,3 +235,34 @@ Wait for actual Terminal output before the next step.
 - Preserve production rollback capability.
 - Eventually align Git main with tested production,
   but only as a deliberate separate operation.
+
+## 13. WalletConnect fix — 2026-10-26
+
+Current tested release commit: 4a21385
+Git branch: main
+Production: https://dex.smartleco.xyz
+
+Problem:
+- WalletConnect was displayed in the wallet list but clicking did nothing.
+- No QR modal appeared.
+- No relevant error appeared in Chrome Console.
+
+Confirmed fix:
+- Installed @walletconnect/ethereum-provider as a direct dependency.
+- Configured EthereumProvider walletConnect with SmartLeCo Reown Project ID.
+- Preserved metaMask: false to maintain working MetaMask Mobile connections.
+- Preserved all other providers and SmartLeCo feeConfig: { fee: 0.005 }.
+
+Verification:
+- npm run build passed.
+- WalletConnect QR modal opened on localhost.
+- WalletConnect wallet connection and disconnection worked locally.
+- WalletConnect QR modal opened on production.
+
+Important:
+- Do not remove @walletconnect/ethereum-provider.
+- Do not replace walletConnect configuration with a bare true value.
+- Do not re-enable MetaMask SDK without full mobile testing.
+- Recheck WalletConnect, MetaMask Mobile, Rabby, swaps and fees after upgrades.
+
+Current main branch contains the latest DEX implementation.

@@ -134,7 +134,9 @@ export default function Home() {
             integrator="SmartLeCo-DEX"
             config={{
               providers: [EthereumProvider({
-                walletConnect: true,
+                walletConnect: {
+                  projectId: '96385baecfaf58a7d6a0652770259687',
+                },
                 coinbase: {
                   appName: 'SmartLeCo DEX',
                   appLogoUrl: 'https://smartleco.xyz/wp-content/uploads/2026/04/logo_SLC-100.png',

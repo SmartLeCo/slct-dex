@@ -132,7 +132,7 @@ export default function Home() {
                   appName: 'SmartLeCo DEX',
                   appLogoUrl: 'https://smartleco.xyz/wp-content/uploads/2026/04/logo_SLC-100.png',
                 },
-                metaMask: true,
+                metaMask: false,
               }), TronProvider(), StellarProvider(), SolanaProvider(), BitcoinProvider(), SuiProvider()],
               feeConfig: { fee: 0.005 },
               appearance: 'dark',

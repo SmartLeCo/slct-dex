@@ -65,7 +65,7 @@ export default function Home() {
               }}
             >
               <img
-                src="/brand/slct-logo.png"
+                src="/brand/SmartLeCo%20SLCT%20token%20logo.png"
                 alt="SLCT"
                 style={{
                   width: '28px',
@@ -139,11 +139,11 @@ export default function Home() {
                 },
                 coinbase: {
                   appName: 'SmartLeCo DEX',
-                  appLogoUrl: 'https://dex.smartleco.xyz/brand/slct-logo.png',
+                  appLogoUrl: 'https://dex.smartleco.xyz/brand/SmartLeCo%20SLCT%20token%20logo.png',
                 },
                 baseAccount: {
                   appName: 'SmartLeCo DEX',
-                  appLogoUrl: 'https://dex.smartleco.xyz/brand/slct-logo.png',
+                  appLogoUrl: 'https://dex.smartleco.xyz/brand/SmartLeCo%20SLCT%20token%20logo.png',
                 },
                 metaMask: false,
               }), TronProvider(), StellarProvider(), SolanaProvider(), BitcoinProvider(), SuiProvider()],

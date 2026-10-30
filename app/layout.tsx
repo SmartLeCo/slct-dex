@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'SmartLeCo DEX',
   description: 'Cross-chain DEX powered by SmartLeCo',
   icons: {
-    icon: '/brand/slct-logo.png',
+    icon: '/brand/SmartLeCo%20SLCT%20token%20logo.png',
   },
 }
 

@@ -308,3 +308,44 @@ IMPORTANT:
 - Do not mark Stellar swaps as verified until a real transaction succeeds.
 
 Current main branch at this checkpoint: 818728e.
+
+## 15. Official SLCT logo — 2026-10-30
+
+Status: FIXED AND VERIFIED ON PRODUCTION
+
+Production: https://dex.smartleco.xyz
+Git branch: main
+Verified code commit: 9c89ee2
+
+Official logo file:
+public/brand/SmartLeCo SLCT token logo.png
+
+IMPORTANT:
+- This is the user-approved original SLCT logo.
+- The correct logo is the circular SmartLeCo mark
+  with the white L in the center.
+- Do not replace it with logo_SLC_with_letters.png.
+- Do not use smartleco-slct-token-logo.svg.
+- Do not recreate, redraw or modify the original logo.
+- Preserve the existing header dimensions and layout.
+
+Logo references:
+- app/DexClient.tsx: DEX header image.
+- app/DexClient.tsx: Coinbase Wallet appLogoUrl.
+- app/DexClient.tsx: Base Account appLogoUrl.
+- app/layout.tsx: favicon.
+
+Logo hosting:
+- The original image is stored in the DEX project's public/brand directory.
+- Header and favicon use the local image path.
+- Wallet connectors use the absolute dex.smartleco.xyz image URL.
+- No dependency on the former WordPress media library.
+
+Production verification:
+- Correct official SLCT logo displayed: PASS.
+- Logo appearance approved by user: PASS.
+- Next.js production build: PASS.
+
+Do not change wallet providers, swap configuration,
+SmartLeCo integrator fee (0.5%) or referral settings
+when updating branding assets.

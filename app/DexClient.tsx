@@ -65,7 +65,7 @@ export default function Home() {
               }}
             >
               <img
-                src="https://smartleco.xyz/wp-content/uploads/2026/04/logo_SLC-100.png"
+                src="/brand/slct-logo.svg"
                 alt="SLCT"
                 style={{
                   width: '28px',
@@ -139,11 +139,11 @@ export default function Home() {
                 },
                 coinbase: {
                   appName: 'SmartLeCo DEX',
-                  appLogoUrl: 'https://smartleco.xyz/wp-content/uploads/2026/04/logo_SLC-100.png',
+                  appLogoUrl: 'https://dex.smartleco.xyz/brand/slct-logo.svg',
                 },
                 baseAccount: {
                   appName: 'SmartLeCo DEX',
-                  appLogoUrl: 'https://smartleco.xyz/wp-content/uploads/2026/04/logo_SLC-100.png',
+                  appLogoUrl: 'https://dex.smartleco.xyz/brand/slct-logo.svg',
                 },
                 metaMask: false,
               }), TronProvider(), StellarProvider(), SolanaProvider(), BitcoinProvider(), SuiProvider()],
